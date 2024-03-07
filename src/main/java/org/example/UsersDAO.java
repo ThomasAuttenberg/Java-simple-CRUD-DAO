@@ -1,6 +1,7 @@
 package org.example;
 
 import java.sql.SQLException;
+import java.util.LinkedList;
 
 public class UsersDAO extends DAO<User>{
 
@@ -8,16 +9,27 @@ public class UsersDAO extends DAO<User>{
         super(User.class);
     }
 
+    @Override
+    public void delete(User entity) {
+        try {
+            super.delete(entity);
+        } catch (SQLException | IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public User getById(long id) {
         try {
-            return super.getByField(User.class.getDeclaredField("user_id"), id);
+            LinkedList<User> users = super.getByField(User.class.getDeclaredField("user_id"), id);
+            return users.isEmpty() ? null : users.getFirst();
         } catch (IllegalAccessException | SQLException | NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
     }
     public User getByName(String name) {
         try {
-            return super.getByField(User.class.getDeclaredField("username"),name);
+            LinkedList<User> users = super.getByField(User.class.getDeclaredField("username"),name);
+            return users.isEmpty() ? null : users.getFirst();
         } catch (IllegalAccessException | SQLException | NoSuchFieldException e) {
             throw new RuntimeException(e);
         }
