@@ -128,7 +128,7 @@ public abstract class DAO<T extends DBSerializable> {
                 entity = linkedList.getLast();
             } catch (InstantiationException | InvocationTargetException | NoSuchMethodException e) {
                 throw new IllegalAccessException("Impossible to create new instance of "+class_.getSimpleName() +
-                        ".\nCheck it's and it's constructor accessibility");
+                        ".\nCheck it and it's constructor accessibility");
             }
             for (Field field : fields) {
                 field.setAccessible(true);
