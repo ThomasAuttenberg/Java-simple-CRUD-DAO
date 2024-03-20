@@ -12,3 +12,4 @@ Example Files:
 <li>User</li>
 <li>Main</li>
 </ul>
+<h2> Warning! Make sure you made the resource control above database connections if it's necessary for your project [DAO class] </h2>
