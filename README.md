@@ -13,4 +13,4 @@ Example Files:
 <li>User</li>
 <li>Main</li>
 </ul>
-<h3> Warning! Make sure you made the resource control above database connections if it's necessary for your project [DAO class] </h3>
+<h3> Warning! Make sure you made the resource control above database connections if it's necessary for your project [close all the connections in DAO class] </h3>
