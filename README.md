@@ -1,4 +1,4 @@
-<h>Simple Java CRUD DAO for postgres (or any with the same semantics) database</h>
+<h1>Simple Java CRUD DAO for postgres (or any with the same semantics) database</h1>
 <br>Project Files:
 <ul>
 <li>DataBaseConnection: DataBase connection, executeQuery or execute operations</li>
@@ -12,4 +12,4 @@ Example Files:
 <li>User</li>
 <li>Main</li>
 </ul>
-<h2> Warning! Make sure you made the resource control above database connections if it's necessary for your project [DAO class] </h2>
+<h3> Warning! Make sure you made the resource control above database connections if it's necessary for your project [DAO class] </h3>
