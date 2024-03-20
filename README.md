@@ -4,6 +4,7 @@
 <li>DataBaseConnection: DataBase connection, executeQuery or execute operations</li>
 <li>DataBaseField annotation. Using to mark DAO object fields</li>
 <li>DataBaseTable annotation. Using to mark class and point an using database table</li>
+<li>DBSerializable interface. Marking interface </li>
 <li>DAO<T>: all the logic. CRUD operations above T</li>
 </ul>
 Example Files:
